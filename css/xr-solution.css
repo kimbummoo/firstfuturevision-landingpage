@@ -1,17 +1,22 @@
+/* 기본 배경 및 텍스트 영역 */
 .background {
+    width: calc(100% - 820px);
     align-self: stretch;
     flex: 1;
     position: relative;
     background-color: #e55d3b;
     z-index: 0;
-}
-.div {
+  }
+  
+  .div {
     position: relative;
     letter-spacing: -0.25px;
     line-height: 3rem;
     font-weight: 800;
-}
-.container1 {
+  }
+  
+  /* 컨테이너 1: 상단 텍스트 영역 */
+  .container1 {
     margin: 0 !important;
     position: absolute;
     top: 22.563rem;
@@ -20,10 +25,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-start;
+    justify-content: flex-end;
     z-index: 1;
-}
-.xr-solution1 {
+  }
+  
+  /* XR-SOLUTION 헤딩 */
+  .xr-solution1 {
     width: 44.938rem;
     position: relative;
     line-height: 7.5rem;
@@ -33,8 +40,10 @@
     height: 8.188rem;
     flex-shrink: 0;
     z-index: 0;
-}
-.background1 {
+  }
+  
+  /* 헤딩 배경 장식 */
+  .background1 {
     width: 2.688rem;
     position: absolute;
     margin: 0 !important;
@@ -44,8 +53,10 @@
     background-color: #e55d3b;
     height: 2.688rem;
     z-index: 1;
-}
-.heading-1 {
+  }
+  
+  /* 헤딩 컨테이너 */
+  .heading-1 {
     margin: 0 !important;
     position: absolute;
     top: 26.469rem;
@@ -56,25 +67,33 @@
     justify-content: flex-end;
     z-index: 2;
     font-size: 6rem;
-}
-.span {
+  }
+  
+  /* 텍스트 스타일 */
+  .span {
     font-family: Inter;
     color: #1a1a1a;
-}
-.p {
+  }
+  
+  .p {
     margin: 0;
-}
-.future-vision-container1 {
+  }
+  
+  /* FUTURE VISION 영역 */
+  .future-vision-container1 {
     width: 100%;
-}
-.future-vision-container {
+  }
+  
+  .future-vision-container {
     width: 42.625rem;
     position: relative;
     line-height: 2.75rem;
     display: flex;
     align-items: center;
-}
-.container2 {
+  }
+  
+  /* 컨테이너 2: FUTURE VISION 텍스트 */
+  .container2 {
     margin: 0 !important;
     position: absolute;
     top: 35.063rem;
@@ -83,12 +102,14 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-start;
+    justify-content: flex-end;
     z-index: 3;
     font-size: 1.5rem;
     color: #ff5851;
-}
-.hook {
+  }
+  
+  /* hook 전체 영역 */
+  .hook {
     align-self: stretch;
     background-color: #fff;
     height: 64.375rem;
@@ -98,21 +119,22 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 0rem 60rem 0rem 0rem;
+    /* padding: 0rem 60rem 0rem 0rem; */
     box-sizing: border-box;
     position: relative;
     text-align: right;
     font-size: 2.5rem;
     color: #1a1a1a;
-}
-.div1 {
+  }
+  
+  /* 컨테이너 3: XRSPACE 내 개별 텍스트 블록 */
+  .div1 {
     align-self: stretch;
     position: relative;
-    letter-spacing: -0.25px;
-    line-height: 3rem;
     font-weight: 800;
-}
-.container3 {
+  }
+  
+  .container3 {
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -121,9 +143,10 @@
     align-items: flex-end;
     justify-content: flex-start;
     z-index: 0;
-}
-.xrspace {
-    width: 100%-768px;
+  }
+  
+  /* XRSPACE 영역 */
+  .xrspace {
     max-width: 1024px;
     margin: auto;
     align-self: stretch;
@@ -133,7 +156,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between; /* Changed to distribute child divs evenly */
+    justify-content: space-between;  /* 자식 요소 간 균등 배분 */
     padding: 12rem 3rem 12rem 0rem;
     box-sizing: border-box;
     position: relative;
@@ -141,8 +164,10 @@
     font-size: 1.1rem;
     color: #2c2c2c;
     height: 44rem;
-}
-.xr-solution2 {
+  }
+  
+  /* 추가 구성 요소 (예시) */
+  .xr-solution2 {
     width: 60rem;
     position: relative;
     display: flex;
@@ -151,8 +176,9 @@
     height: 5.063rem;
     flex-shrink: 0;
     font-size: 1.8rem;
-}
-.section-title {
+  }
+  
+  .section-title {
     width: 83.375rem;
     position: relative;
     font-size: 1.1rem;
@@ -160,16 +186,18 @@
     font-weight: 600;
     color: #4d4d4d;
     display: inline-block;
-}
-.community1 {
+  }
+  
+  .community1 {
     align-self: stretch;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 0.35rem;
-}
-.b {
+  }
+  
+  .b {
     width: 16rem;
     position: relative;
     line-height: 1.566rem;
@@ -179,33 +207,37 @@
     padding-top: 2rem;
     height: 2.125rem;
     flex-shrink: 0;
-}
-.member {
+  }
+  
+  .member {
     width: 11.619rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-}
-.ar {
+  }
+  
+  .ar {
     width: 16rem;
     position: relative;
     line-height: 1.875rem;
     display: inline-block;
     height: 7.75rem;
     flex-shrink: 0;
-}
-.ar-wrapper {
+  }
+  
+  .ar-wrapper {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
     font-size: 0.8rem;
     color: #717171;
-}
-.national-associations {
+  }
+  
+  .national-associations {
     width: 18rem;
-    box-shadow: 0px 1.392138957977295px 2.78px rgba(171, 190, 209, 0.5);
+    box-shadow: 0px 1.392px 2.78px rgba(171, 190, 209, 0.5);
     border-radius: 5.57px;
     background-color: #fff;
     height: 10.75rem;
@@ -216,8 +248,9 @@
     padding: 1.043rem 3.75rem;
     box-sizing: border-box;
     gap: 0.937rem;
-}
-.national-associations-parent {
+  }
+  
+  .national-associations-parent {
     align-self: stretch;
     flex: 1;
     display: flex;
@@ -228,8 +261,9 @@
     gap: 2.75rem;
     font-size: 1.4rem;
     color: #4d4d4d;
-}
-.community {
+  }
+  
+  .community {
     align-self: stretch;
     display: flex;
     flex-direction: column;
@@ -237,17 +271,21 @@
     justify-content: flex-start;
     gap: 2.062rem;
     text-align: center;
-}
-.span1 {
+  }
+  
+  .span1 {
     font-weight: 300;
-}
-.b3 {
+  }
+  
+  .b3 {
     color: #ff5851;
-}
-.b4 {
+  }
+  
+  .b4 {
     font-family: Inter;
-}
-.future-vision-container2 {
+  }
+  
+  .future-vision-container2 {
     width: 68.125rem;
     position: relative;
     font-size: 1.5rem;
@@ -256,8 +294,9 @@
     align-items: center;
     height: 4.5rem;
     flex-shrink: 0;
-}
-.heading-2 {
+  }
+  
+  .heading-2 {
     width: 120rem;
     height: 28.188rem;
     display: flex;
@@ -267,8 +306,9 @@
     padding: 0.062rem 37.725rem;
     box-sizing: border-box;
     text-align: center;
-}
-.contact-us2 {
+  }
+  
+  .contact-us2 {
     width: 29.438rem;
     position: absolute;
     margin: 0 !important;
@@ -277,56 +317,16 @@
     display: flex;
     align-items: center;
     z-index: 0;
-}
+  }
 
-/* 미디어 쿼리 - 화면 폭 768px 이하일 때 */
+  
 @media (max-width: 768px) {
-    /* 네비게이션 영역: 절대 위치 대신 세로 배치 */
-    .navibar {
-      flex-direction: column;
-      justify-content: start;
-      height: 130px;
-    }
-    .naviList {
-      flex-direction: column;        /* 세로로 배치 */
-      align-items: flex-start;        /* 왼쪽 정렬 */
-      justify-content: flex-start;    /* 위에서부터 순서대로 배치 */
-      gap: 1rem;                     /* 항목 간 간격 */
-      padding: 1rem 0 0 2rem;         /* 왼쪽 패딩 추가 */
-    }
-    .topButtonLayout {
+    .hook {
         display: none;
     }
-
-  /* 컨테이너 관련: 고정폭 대신 100% 폭과 중앙 정렬 */
-  .container1, .container2, .container3, 
-  .container5, .container6 {
-    width: 100%;
-    max-width: 100%;
-    left: auto;
-    right: auto;
-    padding: 0 1rem;
-  }
-  .link, .item, .item-link, .link1 {
-    position: static;
-    width: auto;
-    text-align: center;
-  }
-  /* hook 영역: 중앙 정렬 및 position static 처리 */
-  .container1, .heading-1, .container2 {
-    position: static;
-    text-align: center;
-    padding: 1rem 0;
-  }
-  .container3, .container4 {
-    position: static;
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-  
-  /* Community 영역: 요소 간 간격 조정 및 세로 정렬 */
-  .community, .community1, .national-associations-parent {
-    text-align: center;
-    flex-direction: column;
-  }
+    .xrspace {
+        height: 15rem;
+        padding: 3rem 3rem 3rem 0rem;
+        font-size: 0.8rem;
+    }
 }
