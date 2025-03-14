@@ -1,0 +1,85 @@
+/* navibar 스타일 */
+.navibar {
+    align-self: stretch;
+    width: 100%;
+    background-color: #fff;
+    height: 4.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.125rem;
+    color: #000;
+}
+
+/* 네비게이션 리스트 */
+.naviList {
+    display: flex;
+    color: #2d2d2d;
+    justify-content: flex-start; /* 왼쪽 정렬 */
+    gap: 2rem;                /* 항목 사이에 2rem 간격 */
+    padding-left: 2rem;       /* 왼쪽 패딩 */
+}
+
+/* 리스트 안의 각 항목은 내용에 따라 너비가 자동 결정되도록 함 */
+.naviList > div {
+    flex: none;
+    text-align: center;
+}
+
+/* 개별 항목들 */
+.mainButton, 
+.link1, 
+.item-link {
+    position: relative;
+    margin: 0;
+}
+
+.future-vision {
+    font-weight: 800;
+}
+
+/* 상단 버튼 영역 */
+.topButtonText {
+    flex: 1;
+    background-color: #e55d3b;
+    height: 2.688rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.topButtonLayout {
+    position: absolute;
+    top: 1.25rem;
+    right: 5.563rem;
+    width: 22.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 0.625rem;
+    font-size: 1.063rem;
+    color: #fff;
+}
+
+/* 미디어 쿼리: 화면 폭 768px 이하일 경우 */
+@media (max-width: 768px) {
+    .navibar {
+        flex-direction: column;
+        justify-content: start;
+        height: 130px;
+    }
+    .naviList {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 1rem;
+        padding: 1rem 0 0 2rem;
+    }
+    .topButtonLayout {
+        display: none;
+    }
+}
