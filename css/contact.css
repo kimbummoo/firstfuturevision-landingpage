@@ -1,4 +1,3 @@
-/* contact.css */
 .contact-section {
     width: 100%;
     height: 22rem;
@@ -11,15 +10,14 @@
 }
 
 .contact-content {
-    width: (100% - 200px);
-    min-width: 568px;
+    width: calc(100% - 200px);
     max-width: 1024px;
     margin: auto;
 }
 
 .contact-header {
     align-self: stretch;
-    height: 7.25rem;
+    height: 4.25rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -34,16 +32,12 @@
 }
 
 .contact-description {
-    /* 설명 텍스트 스타일 (예: "고객님의 궁금증을 해결해드립니다.") */
-}
-
-.contact-email {
-    /* 이메일 정보 스타일 */
+    /* 설명 텍스트 스타일 */
 }
 
 .contact-social {
     align-self: stretch;
-    height: 4.75rem;
+    height: 7.75rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -53,15 +47,31 @@
     gap: 1.875rem;
 }
 
-.contact-social-icon {
-    width: 2.7rem;
-    border-radius: 60px;
-    max-height: 100%;
-    object-fit: cover;
+/* 카카오톡 채널 버튼 스타일 */
+.kakao-button {
+    background-color: #F7E600;
+    color: #000;
+    border: none;
+    border-radius: 25px; /* 둥근 형태 */
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.kakao-button:hover {
+    background-color: #e5d600;
+}
+
+/* 아이콘 스타일 */
+.kakao-icon {
+    margin: -0.3rem 0.5rem -0.4rem -0.34rem;
+    width: 24px;
+    height: 24px;
 }
 
 @media (max-width: 768px) {
     .contact-content {
-        padding: 4.375rem 2rem;      /* 패딩 조절 */
+        padding: 4.375rem 2rem;
     }
 }

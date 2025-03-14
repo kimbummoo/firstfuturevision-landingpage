@@ -125,6 +125,7 @@
 .xrspace {
     width: 100%-768px;
     max-width: 1024px;
+    margin: auto;
     align-self: stretch;
     background-color: #fff;
     overflow: hidden;

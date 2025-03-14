@@ -8,12 +8,11 @@
 
 /* 내부 콘텐츠 영역: 중앙 정렬 및 각 요소별 패딩 추가 */
 .underbar-content {
-    width: 1024px;
+    /* width: 1024px; */
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
 }
 
 /* 하위 요소에 개별 패딩 적용 */
@@ -62,30 +61,4 @@
 .underbar-social {
   margin-top: 0.6rem;
   text-align: left;
-}
-
-.social-icon {
-  display: inline-block;
-  margin: 0 0.2rem;
-}
-
-.social-icon img {
-  display: block;
-  width: 1.2rem;
-  height: 1.2rem;
-  object-fit: contain; /* 전체 이미지를 보이게 함 */
-  border-radius: 50%;
-}
-
-/* 화면 너비 1024px 이하일 때 .underbar-content를 100%로 변경 */
-@media (max-width: 768px) {
-  
-
-  .logo-text {
-    padding: 0rem 0rem;
-  }
-  .underbar-content {
-    width: 100%;
-    padding: 0 1rem; /* 필요에 따라 좌우 패딩 추가 */
-  }
 }
