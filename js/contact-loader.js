@@ -21,7 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
       .then(response => response.json())
       .then(config => {
         const kakaoLink = document.getElementById('kakaoLink');
-        kakaoLink.href = config.kakaoChannelUrl;
+        // kakaoLink.href = config.kakaoChannelUrl;
+        kakaoLink.href = "http://pf.kakao.com/_iFQnn/chat";
       })
       .catch(error => console.error('설정 파일 로드 실패:', error));
   }
