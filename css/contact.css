@@ -71,7 +71,35 @@
 }
 
 @media (max-width: 768px) {
+    .contact-section {
+        height: auto;
+        padding: 5vw 0;
+    }
     .contact-content {
-        padding: 4.375rem 2rem;
+        width: 90vw;
+        padding: 5vw 2vw;
+    }
+    .contact-header {
+        height: auto;
+        font-size: 5vw; /* clamp 대신 vw 단위로 설정 */
+        padding: 2vw 0;
+    }
+    .contact-description {
+        font-size: 3vw;
+    }
+    .contact-social {
+        height: auto;
+        padding: 2vw;
+        gap: 3vw;
+    }
+    .kakao-button {
+        border-radius: 15px;
+        padding: 2vw 4vw;
+        font-size: 3vw; /* clamp 제거 후 vw 단위로 설정 */
+    }
+    .kakao-icon {
+        width: 3vw;  /* clamp 제거 후 vw 단위로 설정 */
+        height: 3vw;
+        margin: -0.63vw 1.04vw -0.83vw -0.71vw;
     }
 }

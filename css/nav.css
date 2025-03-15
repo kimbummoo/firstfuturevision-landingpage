@@ -34,6 +34,7 @@
 .item-link {
     position: relative;
     margin: 0;
+    background-color: transparent;
 }
 
 .future-vision {
@@ -44,6 +45,7 @@
 .topButtonText {
     flex: 1;
     background-color: #e55d3b;
+    color: #fff;
     height: 2.688rem;
     display: flex;
     align-items: center;

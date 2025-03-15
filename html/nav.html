@@ -1,20 +1,24 @@
 <!-- nav.html -->
 <link rel="stylesheet" href="css/nav.css">
 <div class="navibar">
-    <div class="naviList">
-      <div class="mainButton">
-        <b class="future-vision">FUTURE VISION</b>
-      </div>
-      <div class="link1">XR-SOLUTION</div>
-      <div class="item-link">WORK</div>
-    </div>
-    <div class="topButtonLayout">
-      <div class="topButtonText">
-        <b>Get Portfolio</b>
-      </div>
-      <div class="topButtonText">
-        <b>Contact Us</b>
-      </div>
-    </div>
+  <div class="naviList">
+    <!-- FUTURE VISION 버튼: 클릭 시 .xr-solution-placeholder 로 스크롤 -->
+    <button class="mainButton" id="btnFutVis">
+      <b class="future-vision">FUTURE VISION</b>
+    </button>
+    <!-- XR-SOLUTION 버튼: 클릭 시 .future-vision-placeholder 로 스크롤 -->
+    <button class="link1" id="btnXrSolution">XR-SOLUTION</button>
+    <!-- WORK 버튼: 클릭 시 .contactMessage-placeholder 로 스크롤 -->
+    <button class="item-link" id="btnWork">WORK</button>
   </div>
-  
+  <div class="topButtonLayout">
+    <!-- Get Portfolio 버튼: 클릭 시 PDF 다운로드 -->
+    <button class="topButtonText" id="btnGetPortfolio">
+      <b>Get Portfolio</b>
+    </button>
+    <!-- Contact Us 버튼: 클릭 시 .contact-placeholder 로 스크롤 -->
+    <button class="topButtonText" id="btnContactUs">
+      <b>Contact Us</b>
+    </button>
+  </div>
+</div>

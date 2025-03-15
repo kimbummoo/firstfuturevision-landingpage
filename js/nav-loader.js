@@ -1,14 +1,81 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('html/nav.html')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('네비게이션 파일 로드 실패');
-        }
-        return response.text();
-      })
-      .then(html => {
-        document.getElementById('nav-placeholder').innerHTML = html;
-      })
-      .catch(error => console.error('에러 발생:', error));
-  });
-  
+  fetch('html/nav.html')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('네비게이션 파일 로드 실패');
+      }
+      return response.text();
+    })
+    .then(html => {
+      document.getElementById('nav-placeholder').innerHTML = html;
+      initializeNav();
+    })
+    .catch(error => console.error('에러 발생:', error));
+});
+
+function initializeNav() {
+  // FUTURE VISION 버튼 클릭 시 .xr-solution-placeholder 로 스크롤
+  const btnFutVis = document.getElementById('btnFutVis');
+  if (btnFutVis) {
+    btnFutVis.addEventListener('click', function() {
+      const target = document.getElementById('xr-solution-placeholder');
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        console.error('대상 요소 (xr-solution-placeholder)를 찾을 수 없습니다.');
+      }
+    });
+  }
+
+  // XR-SOLUTION 버튼 클릭 시 .future-vision-placeholder 로 스크롤
+  const btnXrSolution = document.getElementById('btnXrSolution');
+  if (btnXrSolution) {
+    btnXrSolution.addEventListener('click', function() {
+      const target = document.getElementById('future-vision-placeholder');
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        console.error('대상 요소 (future-vision-placeholder)를 찾을 수 없습니다.');
+      }
+    });
+  }
+
+  // WORK 버튼 클릭 시 .contactMessage-placeholder 로 스크롤
+  const btnWork = document.getElementById('btnWork');
+  if (btnWork) {
+    btnWork.addEventListener('click', function() {
+      const target = document.getElementById('contactMessage-placeholder');
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        console.error('대상 요소 (contactMessage-placeholder)를 찾을 수 없습니다.');
+      }
+    });
+  }
+
+  // Get Portfolio 버튼 클릭 시 PDF 파일 다운로드
+  const btnGetPortfolio = document.getElementById('btnGetPortfolio');
+  if (btnGetPortfolio) {
+    btnGetPortfolio.addEventListener('click', function() {
+      const link = document.createElement('a');
+      link.href = 'Data/FUTURE VISION PROFILE.pdf';
+      link.download = 'FUTURE VISION PROFILE.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  }
+
+  // Contact Us 버튼 클릭 시 .contact-placeholder 로 스크롤
+  const btnContactUs = document.getElementById('btnContactUs');
+  if (btnContactUs) {
+    btnContactUs.addEventListener('click', function() {
+      const target = document.getElementById('contact-placeholder');
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        console.error('대상 요소 (contact-placeholder)를 찾을 수 없습니다.');
+      }
+    });
+  }
+}

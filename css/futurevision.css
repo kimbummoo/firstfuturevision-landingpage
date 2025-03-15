@@ -1,4 +1,3 @@
-
 .futurevisionLayout {
     width: 100%;
     height: 24rem;
@@ -18,6 +17,7 @@
     flex-shrink: 0;
 }
 .future-vision-vr-container {
+    /* 데스크탑 디자인 기준 (원래 주석 처리된 width) */
     /* width: 68.125rem; */
     position: relative;
     text-align: center;
@@ -28,6 +28,7 @@
     flex-shrink: 0;
 }
 .item-link3 {
+    /* 데스크탑 디자인 기준 (원래 주석 처리된 width) */
     /* width: 18.125rem; */
     background-color: #e55d3b;
     height: 3.5rem;
@@ -40,4 +41,29 @@
     text-align: left;
     font-size: 1.063rem;
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    .futurevisionLayout {
+        /* 내용에 따라 높이 자동 조정 */
+        height: auto;
+        padding-top: 3vw;
+        padding-bottom: 5vw;
+    }
+    .why-future-vision {
+        font-size: 3.75vw;
+        height: auto;
+    }
+    .future-vision-vr-container {
+        /* 데스크탑 기준: width 68.125rem, height 7.25rem 의 비율을 유지 */
+        width: 90vw; /* 화면 너비의 90%로 설정 */
+        height: calc(90vw * (7.25 / 68.125)); /* 비율에 맞춰 높이 계산 */
+        font-size: 2vw;
+        line-height: 3vw;
+    }
+    .item-link3 {
+        height: 7.29vw;
+        padding: 1.30vw 7.16vw 1.43vw;
+        font-size: 2.21vw;
+    }
 }

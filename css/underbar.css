@@ -1,64 +1,87 @@
 /* Underbar 전체 영역 */
 .underbar {
-    width: 100%;
-    background-color: #2b2b2b;
-    color: #818181;
-    box-sizing: border-box;
-  }
+  width: 100%;
+  background-color: #2b2b2b;
+  color: #818181;
+  box-sizing: border-box;
+}
 
 /* 내부 콘텐츠 영역: 중앙 정렬 및 각 요소별 패딩 추가 */
 .underbar-content {
-    /* width: 1024px; */
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  /* width: 1024px; */
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /* 하위 요소에 개별 패딩 적용 */
 .underbar-content > * {
-    padding: 1rem;
+  padding: 1rem;
 }
-  
+
 /* Header 영역: 수직축으로 가운데 정렬된 로고 텍스트 */
 .underbar-header {
-  flex: 0.8;
-  min-width: 250px;
-  margin: auto; 
-  display: flex;
-  align-items: center;
+flex: 1;
+min-width: 250px;
+margin: auto; 
+display: flex;
+align-items: center;
 }
 
 .logo-text {
-  padding: 1rem 1rem;
-  font-size: 2rem;
-  font-weight: 800;
+font-size: 2rem;
+font-weight: 800;
 }
 
 /* 회사 정보 영역 */
 .company-info {
-  flex: 1;
-  min-width: 250px;
-  text-align: left;
-  font-size: 0.7rem;
+flex: 1;
+min-width: 250px;
+text-align: left;
+font-size: 0.7rem;
 }
 .company-info p {
-  margin: 0.3rem 0;
+margin: 0.3rem 0;
 }
 
 /* Contact 정보 영역 */
 .contact-info {
-  flex: 1;
-  min-width: 250px;
-  text-align: left;
-  font-size: 0.7rem;
+flex: 1;
+min-width: 250px;
+text-align: left;
+font-size: 0.7rem;
 }
 .contact-info p {
-  margin: 0.3rem 0;
+margin: 0.3rem 0;
 }
 
 /* Social 아이콘 영역 */
 .underbar-social {
-  margin-top: 0.6rem;
-  text-align: left;
+margin-top: 0.6rem;
+text-align: left;
+}
+
+/* 768px 이하에서 비율에 맞춰 조정 */
+@media (max-width: 768px) {
+  .underbar-content {
+      width: 90vw; /* 화면에 맞게 폭 조정 */
+  }
+  .underbar-content > * {
+      padding: 2.08vw; /* 1rem ≒ 2.08vw */
+  }
+  .logo-text {
+      font-size: 4.16vw; /* 2rem ≒ 4.16vw */
+  }
+  .company-info,
+  .contact-info {
+      font-size: 1.46vw; /* 0.7rem ≒ 1.46vw */
+  }
+  .company-info p,
+  .contact-info p {
+      margin: 0.62vw 0; /* 0.3rem ≒ 0.62vw */
+  }
+  .underbar-social {
+      margin-top: 1.25vw; /* 0.6rem ≒ 1.25vw */
+  }
 }
