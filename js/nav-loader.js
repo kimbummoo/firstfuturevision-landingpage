@@ -58,7 +58,7 @@ function initializeNav() {
   if (btnGetPortfolio) {
     btnGetPortfolio.addEventListener('click', function() {
       const link = document.createElement('a');
-      link.href = 'Data/FUTURE_VISION_PROFILE.pdf';
+      link.href = '/data/FUTURE_VISION_PROFILE.pdf';
       link.download = 'FUTURE_VISION_PROFILE.pdf';
       document.body.appendChild(link);
       link.click();
