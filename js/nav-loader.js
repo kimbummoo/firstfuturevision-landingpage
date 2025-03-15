@@ -57,7 +57,12 @@ function initializeNav() {
   const btnGetPortfolio = document.getElementById('btnGetPortfolio');
   if (btnGetPortfolio) {
     btnGetPortfolio.addEventListener('click', function() {
-      window.location.href = '/data/FUTURE_VISION_PROFILE.pdf';
+      const link = document.createElement('a');
+      link.href = '/firstfuturevision-landingpage/data/FUTURE_VISION_PROFILE.pdf';
+      link.download = 'FUTURE_VISION_PROFILE.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
     });
   }
 
