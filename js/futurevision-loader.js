@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
   {
     document.getElementById('downloadBtn').addEventListener('click', function() {
       const link = document.createElement('a');
-      link.href = 'Data/FUTURE VISION PROFILE.pdf';
-      link.download = 'FUTURE VISION PROFILE.pdf';
+      link.href = 'Data/FUTURE_VISION_PROFILE.pdf';
+      link.download = 'FUTURE_VISION_PROFILE.pdf';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);

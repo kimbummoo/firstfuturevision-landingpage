@@ -14,11 +14,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function initializeNav() {
-  // FUTURE VISION 버튼 클릭 시 .xr-solution-placeholder 로 스크롤
+  // FUTURE VISION 버튼 클릭 시 xr-solution-placeholder 로 스크롤
   const btnFutVis = document.getElementById('btnFutVis');
   if (btnFutVis) {
     btnFutVis.addEventListener('click', function() {
-      const target = document.getElementById('xr-solution-placeholder');
+      const target = document.getElementById('nav-placeholder');
       if (target) {
         target.scrollIntoView({ behavior: 'smooth' });
       } else {
@@ -27,7 +27,7 @@ function initializeNav() {
     });
   }
 
-  // XR-SOLUTION 버튼 클릭 시 .future-vision-placeholder 로 스크롤
+  // XR-SOLUTION 버튼 클릭 시 future-vision-placeholder 로 스크롤
   const btnXrSolution = document.getElementById('btnXrSolution');
   if (btnXrSolution) {
     btnXrSolution.addEventListener('click', function() {
@@ -40,15 +40,15 @@ function initializeNav() {
     });
   }
 
-  // WORK 버튼 클릭 시 .contactMessage-placeholder 로 스크롤
+  // WORK 버튼 클릭 시 future-vision-placeholder 로 스크롤
   const btnWork = document.getElementById('btnWork');
   if (btnWork) {
     btnWork.addEventListener('click', function() {
-      const target = document.getElementById('contactMessage-placeholder');
+      const target = document.getElementById('future-vision-placeholder');
       if (target) {
         target.scrollIntoView({ behavior: 'smooth' });
       } else {
-        console.error('대상 요소 (contactMessage-placeholder)를 찾을 수 없습니다.');
+        console.error('대상 요소 (future-vision-placeholder)를 찾을 수 없습니다.');
       }
     });
   }
@@ -58,15 +58,15 @@ function initializeNav() {
   if (btnGetPortfolio) {
     btnGetPortfolio.addEventListener('click', function() {
       const link = document.createElement('a');
-      link.href = 'Data/FUTURE VISION PROFILE.pdf';
-      link.download = 'FUTURE VISION PROFILE.pdf';
+      link.href = 'Data/FUTURE_VISION_PROFILE.pdf';
+      link.download = 'FUTURE_VISION_PROFILE.pdf';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
     });
   }
 
-  // Contact Us 버튼 클릭 시 .contact-placeholder 로 스크롤
+  // Contact Us 버튼 클릭 시 contact-placeholder 로 스크롤
   const btnContactUs = document.getElementById('btnContactUs');
   if (btnContactUs) {
     btnContactUs.addEventListener('click', function() {
