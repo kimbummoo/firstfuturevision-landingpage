@@ -57,24 +57,7 @@ function initializeNav() {
   const btnGetPortfolio = document.getElementById('btnGetPortfolio');
   if (btnGetPortfolio) {
     btnGetPortfolio.addEventListener('click', function() {
-      fetch('/data/FUTURE_VISION_PROFILE.pdf')
-        .then(response => {
-          if (!response.ok) {
-            throw new Error('PDF 파일 로드 실패');
-          }
-          return response.blob();
-        })
-        .then(blob => {
-          const url = window.URL.createObjectURL(blob);
-          const a = document.createElement('a');
-          a.href = url;
-          a.download = 'FUTURE_VISION_PROFILE.pdf';
-          document.body.appendChild(a);
-          a.click();
-          a.remove();
-          window.URL.revokeObjectURL(url);
-        })
-        .catch(err => console.error('PDF 다운로드 중 오류 발생:', err));
+      window.location.href = '/data/FUTURE_VISION_PROFILE.pdf';
     });
   }
 
