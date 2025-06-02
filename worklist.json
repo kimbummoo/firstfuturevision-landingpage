@@ -64,15 +64,6 @@
             "image": "/images/20250202 image.png"
         },
         {
-            "id": "20250301",
-            "title": "((주)우신아이티솔루션) MES HTML Web 페이지 개발",
-            "category": "Web",
-            "priority": 1,
-            "date": "2025-03-01",
-            "path": "/works/20250301 ((주)우신아이티솔루션) MES HTML Web 페이지 개발.html",
-            "image": "/images/20250301 image.png"
-        },
-        {
             "id": "20250302",
             "title": "부동산등기부등본 OCR 파이프라인 구축",
             "category": "AI",
