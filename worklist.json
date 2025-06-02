@@ -2,7 +2,7 @@
     "files": [
         {
             "id": "20241101",
-            "title": "(4uProduct) 포천시 관강지 AR 필터",
+            "title": "포천시 관강지 AR 필터",
             "category": "Web,Photo",
             "priority": 1,
             "date": "2024-11-01",
@@ -11,31 +11,93 @@
         },
         {
             "id": "20241102",
-            "title": "(PURETY) 반지 AR 가상 착용 앱",
+            "title": "반지 AR 가상 착용 앱",
             "category": "AR,App,AI",
             "priority": 1,
             "date": "2024-11-02",
-            "path": "/works/20241102.html",
+            "path": "/works/20241102 (PURETY) 반지 AR 가상 착용 앱.html",
             "image": "/images/20241102 image.png"
+        },
+        {
+            "id": "20241201",
+            "title": "갓생 루틴 셀카 페이지",
+            "category": "Web,Photo",
+            "priority": 1,
+            "date": "2024-12-01",
+            "path": "/works/20241201 (SArtem) 갓생 루틴 셀카 페이지.html",
+            "image": "/images/20241203 image.jpg"
+        },
+        {
+            "id": "20241202",
+            "title": "세종 놀이터 AR 콘텐츠",
+            "category": "Web,AR",
+            "priority": 1,
+            "date": "2024-12-02",
+            "path": "/works/20241202 (주식회사 가온디자인) 세종 놀이터 AR 콘텐츠.html",
+            "image": "/images/20241201 image.png"
+        },
+        {
+            "id": "20250101",
+            "title": "가평 놀이터 AR 콘텐츠",
+            "category": "Web,AR",
+            "priority": 1,
+            "date": "2025-01-01",
+            "path": "/works/20250101 (주식회사 가온디자인) 가평 놀이터 AR 콘텐츠.html",
+            "image": "/images/20250101 image.png"
+        },
+        {
+            "id": "20250201",
+            "title": "메시지 카드 AR 증강",
+            "category": "Web,AR",
+            "priority": 1,
+            "date": "2025-02-01",
+            "path": "/works/20250201 (SArtem) 메시지 카드 AR 증강.html",
+            "image": "/images/20250201 image.png"
+        },
+        {
+            "id": "20250202",
+            "title": "가구, 화분 상품 AR 홍보",
+            "category": "Web,AR",
+            "priority": 1,
+            "date": "2025-02-02",
+            "path": "/works/20250202 가구, 화분 상품 AR 홍보.html",
+            "image": "/images/20250202 image.png"
+        },
+        {
+            "id": "20250301",
+            "title": "((주)우신아이티솔루션) MES HTML Web 페이지 개발",
+            "category": "Web",
+            "priority": 1,
+            "date": "2025-03-01",
+            "path": "/works/20250301 ((주)우신아이티솔루션) MES HTML Web 페이지 개발.html",
+            "image": "/images/20250301 image.png"
+        },
+        {
+            "id": "20250302",
+            "title": "부동산등기부등본 OCR 파이프라인 구축",
+            "category": "AI",
+            "priority": 1,
+            "date": "2025-03-01",
+            "path": "/works/20250302 부동산등기부등본 OCR 파이프라인 구축.html",
+            "image": "/images/20250302 image.png"
+        },
+        {
+            "id": "20250303",
+            "title": "수어 훈련 VR 콘텐츠",
+            "category": "App,VR",
+            "priority": 1,
+            "date": "2025-03-01",
+            "path": "/works/20250303 수어 훈련 VR 콘텐츠.html",
+            "image": "/images/20250303 image.png"
+        },
+        {
+            "id": "20250403",
+            "title": "수어 인식 AI 모델 개발",
+            "category": "AI",
+            "priority": 1,
+            "date": "2025-04-03",
+            "path": "/works/20250403 수어 인식 AI 모델 개발.html",
+            "image": "/images/20250403 image.png"
         }
-    ],
-    "temp": [
-        "works/20250403.html",
-        "works/20250303.html",
-        "works/20250302.html",
-        "works/20250202.html",
-        "works/20250201.html",
-        "works/20250101.html",
-        "works/20241202.html",
-        "works/20241201.html",
-        "works/20241102.html",
-        "works/20241101.html",
-
-        "works/20250601.html",
-        "works/20250502.html",
-        "works/20250501.html",
-        "works/20250402.html",
-        "works/20250401.html",
-        "works/20250301.html"
     ]
 }
