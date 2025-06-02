@@ -1,22 +1,22 @@
 {
     "files": [
-        "works/20250403.md",
-        "works/20250303.md",
-        "works/20250302.md",
-        "works/20250202.md",
-        "works/20250201.md",
-        "works/20250101.md",
-        "works/20241202.md",
-        "works/20241201.md",
-        "works/20241102.md",
-        "works/20241101.md"
+        "works/20250403.html",
+        "works/20250303.html",
+        "works/20250302.html",
+        "works/20250202.html",
+        "works/20250201.html",
+        "works/20250101.html",
+        "works/20241202.html",
+        "works/20241201.html",
+        "works/20241102.html",
+        "works/20241101.html"
     ],
     "temp": [
-        "works/20250601.md",
-        "works/20250502.md",
-        "works/20250501.md",
-        "works/20250402.md",
-        "works/20250401.md",
-        "works/20250301.md"
+        "works/20250601.html",
+        "works/20250502.html",
+        "works/20250501.html",
+        "works/20250402.html",
+        "works/20250401.html",
+        "works/20250301.html"
     ]
 }
