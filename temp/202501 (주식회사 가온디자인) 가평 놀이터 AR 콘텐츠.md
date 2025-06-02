@@ -1,0 +1,9 @@
+---
+id: 2
+title: 슬롯머신 이벤트
+image: /images/slot-machine.png
+category: VR-Contents
+date: 2024-05-02
+---
+
+이곳에 상세 설명이나 부가 정보를 자유롭게 작성할 수 있습니다.
