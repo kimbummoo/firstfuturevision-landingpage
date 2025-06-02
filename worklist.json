@@ -8,6 +8,15 @@
             "date": "2024-11-01",
             "path": "/works/20241101.html",
             "image": "/images/20241101 image.png"
+        },
+        {
+            "id": "20241102",
+            "title": "(PURETY) 반지 AR 가상 착용 앱",
+            "category": "AR,App,AI",
+            "priority": 1,
+            "date": "2024-11-02",
+            "path": "/works/20241102.html",
+            "image": "/images/20241102 image.png"
         }
     ],
     "temp": [
